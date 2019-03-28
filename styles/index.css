@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+	background-color: #78D2FA;
+	font-family: Arial;
+}
+
+/*Tekst centreren*/
+h1, h2, #temp, p{
+	text-align: center;
+}
+
+/*Titel in iets naar beneden*/
+h1 {
+	padding-top: 50px;
+}
+
+h2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*SVG positioneren*/
+img {
+	height: 70px;
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+/*groene blokken*/
+#landingAdvice, #weather {
+	background-color: #A5DC69;
+	border-radius: 5px;
+	width: 45%;
+	height: 400px;
+}
+
+#landingAdvice {
+	grid-area: advice;
+}
+
+#weather {
+	grid-area: weather;
+}
+
+#wrapper {
+    display: flex;
+	justify-content: space-around;
+    grid-template-columns: 2fr;
+    grid-auto-rows: minmax(450px, auto);
+    grid-template-areas: 
+    "advice weather";
+}
+
+/*Teskt kleur landingsadvies*/
+.no #answer {
+	color: red;
+}
+.yes #answer{
+	color: green;
+}
+
+/*Afbeelding bij advies*/
+#image {
+	height: 200px;
+	border-radius: 5px;
+	align-content: center;
+	padding: 0px;
+	margin: 0px;
+}
